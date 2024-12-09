@@ -83,32 +83,29 @@ body{
 
 /*NAVIGATION BAR*/
 
+
 .navbar {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     z-index: 1000;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
   }
   
   .navbar a {
     padding: 2rem;
     font-size: 2rem;
     background: var(--secondary-color);
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
     color: #fff;
     text-align: center;
     -webkit-transition: .2s linear;
     transition: .2s linear;
   }
+  
   
   .navbar a i {
     color: var(--accent-color);
@@ -128,8 +125,7 @@ body{
 
   @media (max-width: 1024px) {
     .navbar{
-        top: 0;
-        bottom: 94vh;
+        bottom: 90%;
     }
     .navbar a:hover {
         padding-bottom: 0;
